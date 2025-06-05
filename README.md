@@ -2,7 +2,7 @@
 
 ## **1\. Overview**
 
-`pitr_cli.py` is a command-line Python utility designed to perform Point-in-Time Recovery (PITR) for MongoDB. It utilizes oplog entries collected by a separate `oplog_collector.py` script (assumed to be stored in a dedicated Oplog Data Store MongoDB). This tool allows users to check the available time range for recovery and to apply oplogs to a restored MongoDB instance to bring it to a specific point in time.
+`pitr_cli.py` is a command-line Python utility designed to perform Point-in-Time Recovery (PITR) for MongoDB. It utilizes oplog entries collected by a separate [oplog collector](https://github.com/MongoBuddy/oplog_collector) script (assumed to be stored in a dedicated Oplog Data Store MongoDB). This tool allows users to check the available time range for recovery and to apply oplogs to a restored MongoDB instance to bring it to a specific point in time.
 
 This script is intended to be used in conjunction with a base backup/snapshot restoration (e.g., LVM snapshot, EBS snapshot, or `mongodump`).
 
